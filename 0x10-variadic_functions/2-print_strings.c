@@ -1,13 +1,14 @@
 #include "variadic_functions.h"
+#include <stdio.h>
+#include <stdarg.h>
 
 /**
- * * print_strings - Prints strings passed to the function separed by separators
- * * @separator: A string that is used to separate strings
- * * @n: number of unnamed parameters
- * * Return: Always 0
+ *  * print_strings - print out strings
+ *   * @seperator: character used to seperate integer
+ *    * @n: no of integer in array
+ *     * @...: infinite number of variables
  */
-
-void print_strings(const char *separator, const unsigned int n, ...)
+void print_strings(const char *seperator, const unsigned int n, ...)
 {
 	char *str;
 	unsigned int i;
